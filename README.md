@@ -1,19 +1,8 @@
 # fs
-Is the Core of the Stealify cdn middleware
+The Filesystem Implementation for Stealify Components as Component. Works most best on top of btrfs while other storage backends are supported.
+The Porting Merging Implementation is in @stealify/filesystem which is a universal abstraction layer this are the low level Components to Build a Physical Filesystem.
 
-it supplys a unifed file sync layer based on couchbase algos 
-
-so it binds any database with any filesystem into a fileserver supporting multiple output formarts
-
-## Support State Databases
-- Recommended Couchbase-Cluster or Couchbase-Server
-- any
-
-## Support Input Formarts
-- any blob storage
-
-## Support Output Formarts
-- http
-- CMIS
-- nfs
-- any 
+## Features
+- multihash driven filesystem views (Allows to expose files in multiple ways without copying them).
+- Large Set of File Operation Components to maintain large sets of files/Documents/blobs any data set.
+- Enables to build whole Component Based Database Systems or Pipelines.
